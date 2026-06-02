@@ -1,0 +1,18 @@
+{
+  "name": "wa-blur",
+  "version": "1.0.0",
+  "description": "Blur WhatsApp Web messages for privacy. Unblur on hover.",
+  "private": true,
+  "author": "kamu sendiri",
+  "license": "MIT",
+  "scripts": {
+    "dev": "web-ext run --source-dir . --target firefox-desktop",
+    "dev:zen": "web-ext run --source-dir . --target firefox-desktop --firefox flatpak:app.zen_browser.zen",
+    "lint": "web-ext lint --source-dir .",
+    "build": "web-ext build --source-dir . --artifacts-dir dist",
+    "clean": "rm -rf dist web-ext-artifacts"
+  },
+  "devDependencies": {
+    "web-ext": "^8.4.0"
+  }
+}
