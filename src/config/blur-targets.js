@@ -16,8 +16,8 @@
       container: '[data-testid="msg-container"]',
       children: [
         { selector: '[data-testid="msg-container"]', ratio: 1.0 },
-        { selector: '[data-testid="author"]',          ratio: 0.83 },
-        { selector: '[data-testid="quoted-message"]',  ratio: 0.67 },
+        { selector: '[data-testid="author"]', ratio: 0.83 },
+        { selector: '[data-testid="quoted-message"]', ratio: 0.67 },
         { selector: '[data-testid="sticker-container"]', ratio: 1.33 },
         { selector: '[data-testid="conversation-info-header-chat-title"]', ratio: 1.33 },
         { selector: '[data-testid="cell-frame-title"]', ratio: 1.33 }
@@ -28,7 +28,7 @@
       children: [
         { selector: '[data-testid="conversation-info-header-chat-title"]', ratio: 1 },
         { selector: '[data-testid="cell-frame-title"]', ratio: 1.33 },
-        { selector: '[data-testid="cell-frame-secondary"]', ratio: 1.33}
+        { selector: '[data-testid="cell-frame-secondary"]', ratio: 1.33 }
       ]
     }
   ];
