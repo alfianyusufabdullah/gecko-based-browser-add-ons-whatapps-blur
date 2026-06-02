@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "WA Blur",
+  "version": "1.0.0",
+  "description": "Blur WhatsApp Web messages for privacy. Unblur on hover.",
+  "author": "Alfian Yusuf Abdullah",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": [
+        "src/config/constants.js",
+        "src/config/blur-targets.js",
+        "src/lib/storage.js",
+        "src/content/state.js",
+        "src/content/level.js",
+        "src/content/ipc.js",
+        "src/content/index.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "48": "src/assets/icons/icon-48.png",
+      "96": "src/assets/icons/icon-96.png"
+    },
+    "default_title": "WA Blur",
+    "default_popup": "src/popup/popup.html"
+  },
+
+  "icons": {
+    "48": "src/assets/icons/icon-48.png",
+    "96": "src/assets/icons/icon-96.png"
+  }
+}
