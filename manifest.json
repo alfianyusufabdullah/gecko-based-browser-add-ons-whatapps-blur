@@ -33,5 +33,13 @@
   "icons": {
     "48": "src/assets/icons/icon-48.png",
     "96": "src/assets/icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "whatapps-blur@gecko-add-on",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
   }
 }
